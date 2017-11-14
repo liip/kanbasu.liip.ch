@@ -1,0 +1,29 @@
+/*----------------------------------------*\
+  THUMBNAIL
+\*----------------------------------------*/
+
+.thumbnail {
+  display: block;
+  overflow: hidden;
+
+  position: relative;
+
+  border-radius: $border-radius-small;
+  border-bottom: 0;
+
+  &:hover,
+  &:active {
+    .thumbnail__img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+  .thumbnail__img {
+    position: relative;
+    z-index: -1;
+
+    border-radius: inherit;
+    transition: transform .3s cubic-bezier(.17,.67,.4,.99);
+    transform-origin: top center;
+  }
