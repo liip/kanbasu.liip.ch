@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kanbasu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="A lightweight, responsive and customizable CSS framework written in Sass.">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+
+  <body>
+    <header class="site-header pdgv md-pdgv+ lg-pdgv++">
+      <div class="container">
+        <img src="images/logo.svg" alt="Kanbasu" class="logo img-responsive align-center">
+        <p class="description text-center mrgb0">A lightweight CSS framework written in Sass.</p>
+      </div>
+    </header>
+
+    <main class="site-content pdgv+ md-pdgv++">
+      <div class="container">
+        <div class="grid grid--multiline text-center">
+          <div class="grid__item md-w-1/3">
+            <h2 class="mrgt0">Install</h2>
+            <pre class="mrgb0"><code>npm install --save-dev kanbasu</code></pre>
+            <p class="text-muted mrgb0">Install Kanbasu as an npm dependency.<br/><a href="http://kanbasu.liip.ch/2/docs/installation.html">See other methods</a></p>
+          </div>
+          <div class="grid__item md-w-1/3">
+            <h2 class="mrgt0">Setup</h2>
+            <pre class="mrgb0"><code>node node_modules/kanbasu/scripts/scaffold.js path/to/your/scss/folder</code></pre>
+            <p class="text-muted mrgb0">Generate a main Sass file and a copy of the settings in the directory of your choice.<br><a href="http://kanbasu.liip.ch/2/docs/installation.html#setup">Learn More</a></p>
+          </div>
+          <div class="grid__item md-w-1/3">
+            <h2 class="mrgt0">Create</h2>
+            <p class="mrgb0">
+              <a href="http://kanbasu.liip.ch/2" class="btn btn--primary btn--large btn--block">Read the documentation</a>
+            </p>
+            <p>
+              <a href="https://github.com/liip/kanbasu">Browse the code</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="heading">
+          <h1 class="text-center mrgv0">Features</h1>
+        </div>
+        <div class="grid grid--large grid--multiline grid--center text-center">
+          <div class="grid__item sm-w-1/2 md-w-1/3">
+            <svg class="icon icon--400">
+              <use xlink:href="images/icons.svg#sass"></use>
+            </svg>
+            <h2 class="mrgt0">Made with Sass</h2>
+            <p class="mrgb0 text-muted">High modularity and customization are the main reasons we chose <a href="http://sass-lang.com/">Sass</a> to build this framework. Customize all the defaults with variables and include only the modules you need to speed-up your loading time.</p>
+          </div>
+          <div class="grid__item sm-w-1/2 md-w-1/3">
+            <svg class="icon icon--400">
+              <use xlink:href="images/icons.svg#responsive"></use>
+            </svg>
+            <h2 class="mrgt0">Fully responsive</h2>
+            <p class="mrgb0 text-muted">You won’t find a single fixed unit in here. Kanbasu is adapted to all devices and screen sizes. The mobile-first approach ensure your visitors will have the best experience even on the smallest screens.</p>
+          </div>
+          <div class="grid__item sm-w-1/2 md-w-1/3">
+            <svg class="icon icon--400">
+              <use xlink:href="images/icons.svg#feather"></use>
+            </svg>
+            <h2 class="mrgt0">Lightweight</h2>
+            <p class="mrgb0 text-muted">Each project is different and a framework should not lock you up into its patterns. Kanbasu provides you the bare minimum to scaffold interfaces quickly without defining how the interface should look.</p>
+          </div>
+          <div class="grid__item sm-w-1/2 md-w-1/3">
+            <svg class="icon icon--400">
+              <use xlink:href="images/icons.svg#layout"></use>
+            </svg>
+            <h2 class="mrgt0">Modern</h2>
+            <p class="mrgb0 text-muted">The <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">flexible box module</a> (aka flexbox) is intensively used accross the framework. It enables modern layouting techniques while keeping the code clean and supporting a wide range of browsers.</p>
+          </div>
+          <div class="grid__item sm-w-1/2 md-w-1/3">
+            <svg class="icon icon--400">
+              <use xlink:href="images/icons.svg#settings"></use>
+            </svg>
+            <h2 class="mrgt0">Highly customizable</h2>
+            <p class="mrgb0 text-muted">Kanbasu comes with a handy bunch of variants for each component to cover the usual cases. But since those are generated based on variables, you are free to add or remove pretty much anything.</p>
+          </div>
+        </div>
+
+        <div class="heading">
+          <h1 class="text-center mrgv0">Showcase</h1>
+        </div>
+        <div class="grid grid--multiline grid--large grid--center">
+          <div class="grid__item sm-w-1/2 lg-w-1/3">
+            <a href="http://www.piaget.com" class="thumbnail">
+              <img src="images/showcase/piaget.jpg" alt="Piaget" class="thumbnail__img img-block">
+            </a>
+          </div>
+          <div class="grid__item sm-w-1/2 lg-w-1/3">
+            <a href="https://www.mobiliere.ch" class="thumbnail">
+              <img src="images/showcase/mobi.jpg" alt="La Mobilière" class="thumbnail__img img-block">
+            </a>
+          </div>
+          <div class="grid__item sm-w-1/2 lg-w-1/3">
+            <a href="https://www.tooyoo.ch" class="thumbnail">
+              <img src="images/showcase/tooyoo.jpg" alt="Tooyoo" class="thumbnail__img img-block">
+            </a>
+          </div>
+          <div class="grid__item sm-w-1/2 lg-w-1/3">
+            <a href="https://www.liip.ch" class="thumbnail">
+              <img src="images/showcase/liip.jpg" alt="Liip" class="thumbnail__img img-block">
+            </a>
+          </div>
+          <div class="grid__item sm-w-1/2 lg-w-1/3">
+            <a href="https://www.creative-academy.com/" class="thumbnail">
+              <img src="images/showcase/creative-academy.jpg" alt="Creative Academy" class="thumbnail__img img-block">
+            </a>
+          </div>
+          <div class="grid__item sm-w-1/2 lg-w-1/3">
+            <a href="https://www.metropop.ch/" class="thumbnail">
+              <img src="images/showcase/metropop.jpg" alt="Metropop" class="thumbnail__img img-block">
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer box box--default box--large pdgh0 pdgv md-pdgv+ lg-pdgv++">
+      <div class="container">
+        <div class="grid grid--multiline">
+          <div class="grid__item md-w-1/3">
+            <ul class="list-stacked list-stacked--tiny">
+              <li><a href="https://www.github.com/liip/kanbasu">Kanbasu on GitHub</a></li>
+              <li><a href="http://kanbasu.liip.ch/2/">Documentation</a> (<a href="http://kanbasu.liip.ch/1/">Version 1</a>)</li>
+              <li><a href="https://www.liip.ch/en/blog/tags/kanbasu">Blog</a></li>
+            </ul>
+          </div>
+          <div class="grid__item md-w-2/3 md-text-right">
+            <a href="https://www.liip.ch" title="Powered By Liip">
+              <svg class="icon" width="160" height="15">
+                <use xlink:href="images/icons.svg#powered-by-liip"></use>
+              </svg>
+            </a>
+            <p class="mrgb0 text-muted">Distributed under the MIT license</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

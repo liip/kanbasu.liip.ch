@@ -6,18 +6,18 @@
   "scripts": {
     "build": "npm run build:css",
     "start": "parallelshell 'npm run server' 'npm run watch:css'",
-    "server": "browser-sync start --server 'src' --files 'src' 'dist' --serveStatic 'dist' --no-open",
-    "scss": "node-sass --include-path 'node_modules' --output-style compressed -o dist/css src/scss",
-    "autoprefixer": "postcss -u autoprefixer -r dist/css/*.css",
+    "server": "browser-sync start --server '.' --no-open",
+    "scss": "node-sass --include-path 'node_modules' --output-style compressed -o css scss",
+    "autoprefixer": "postcss -u autoprefixer -r css/*.css",
     "build:css": "npm run scss && npm run autoprefixer",
-    "watch:css": "onchange 'src/scss/**/*.scss' -- npm run build:css"
+    "watch:css": "onchange 'scss/**/*.scss' -- npm run build:css"
   },
   "author": "Benoît Burgener, Liip AG",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
     "browser-sync": "^2.18.13",
-    "kanbasu": "^2.0.0-rc.1",
+    "kanbasu": "^2.0.0-rc.2",
     "node-sass": "^4.5.3",
     "onchange": "^3.2.1",
     "parallelshell": "^3.0.2",

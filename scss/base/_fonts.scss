@@ -1,0 +1,23 @@
+/*----------------------------------------*\
+  FONTS
+\*----------------------------------------*/
+
+@font-face {
+  font-family: 'Liip Etica';
+  src: url('../fonts/Etica-Book.woff2') format('woff2'),
+       url('../fonts/Etica-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Liip Etica';
+  font-weight: 500;
+  src: url('../fonts/Etica-SemiBold.woff2') format('woff2'),
+       url('../fonts/Etica-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Liip Etica';
+  font-weight: 700;
+  src: url('../fonts/Etica-Bold.woff2') format('woff2'),
+       url('../fonts/Etica-Bold.woff') format('woff');
+}

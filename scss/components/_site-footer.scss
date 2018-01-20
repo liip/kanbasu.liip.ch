@@ -1,0 +1,18 @@
+/*----------------------------------------*\
+  SITE FOOTER
+\*----------------------------------------*/
+
+.site-footer {
+  color: $alt-color-light;
+
+  box-shadow: 0 1.5vw 0 0 rgba(0,0,0,.1) inset;
+
+  a {
+    color: $alt-color-light;
+
+    &:hover,
+    &:focus {
+      color: white;
+    }
+  }
+}
