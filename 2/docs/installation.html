@@ -42,7 +42,7 @@
   </a>
   <ul class="Header-menu">
     
-      <li class="Header-version">2.0.0</li>
+      <li class="Header-version">2.1.0</li>
     
     <li>
       <a href="https://github.com/liip/kanbasu" title="Kanbasu on Github">
@@ -83,8 +83,9 @@
 
     
     
-    <h3 id="with-npm">With NPM</h3>
-<code class="lang-bash"><pre>npm install --save-dev kanbasu</pre></code><h3 id="as-a-git-submodule">As a Git submodule</h3>
+    <h3 id="with-npm">With npm</h3>
+<code class="lang-bash"><pre>npm install --save-dev kanbasu</pre></code><h3 id="with-yarn">With Yarn</h3>
+<code class="lang-bash"><pre>yarn add --dev kanbasu</pre></code><h3 id="as-a-git-submodule">As a Git submodule</h3>
 <code class="lang-bash"><pre>git submodule add git@github.com:liip/kanbasu.git</pre></code><h3 id="manually">Manually</h3>
 <p><a href="https://github.com/liip/kanbasu/archive/master.tar.gz">Download the latest release archive</a></p>
 <h2 id="setup">Setup</h2>
@@ -95,7 +96,10 @@
 <li>remove Sass <code>!default</code> flags from <code>settings/_settings.scss</code></li>
 <li>import <code>settings/_settings.scss</code> into <code>main.scss</code></li>
 </ol>
-<code class="lang-bash"><pre>node node_modules/kanbasu/scripts/scaffold.js path/to/your/project/sass/directory</pre></code><p><em>Note: the script might be in a different location if you didn’t use NPM to install Kanbasu.</em></p>
+<p>With npx:</p>
+<code class="lang-bash"><pre>npx kanbasu path/to/your/sass/directory</pre></code><p>With yarn:</p>
+<code class="lang-bash"><pre>yarn run kanbasu path/to/your/sass/directory</pre></code><p>With Node only:</p>
+<code class="lang-bash"><pre>node node_modules/kanbasu/scripts/scaffold.js path/to/your/sass/directory</pre></code><p>Note: the script might be in a different location if you didn’t use npm to install Kanbasu.</p>
 
     
 
@@ -200,6 +204,16 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="settings.html" data-pjax>
                 <span>Settings</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="text-direction.html" data-pjax>
+                <span>Text Direction</span>
                 
             </a>
         </li>

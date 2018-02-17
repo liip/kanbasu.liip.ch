@@ -42,7 +42,7 @@
   </a>
   <ul class="Header-menu">
     
-      <li class="Header-version">2.0.0</li>
+      <li class="Header-version">2.1.0</li>
     
     <li>
       <a href="https://github.com/liip/kanbasu" title="Kanbasu on Github">
@@ -94,7 +94,9 @@ value of your choice when specified as the second parameter.</p>
 mathematically equal spacings never “visually” look equal around text.</p>
 <code class="lang-scss"><pre><span class="hljs-attribute">padding</span>: ratio(<span class="hljs-number">24px</span>) <span class="hljs-number">24px</span>; <span class="hljs-comment">//-&gt; padding: 14px 24px;</span></pre></code><h2 id="parse-int-value-">parse-int($value)</h2>
 <p>Return the value without unit.</p>
-<code class="lang-scss"><pre>parse-int(10px) <span class="hljs-comment">//-&gt; 10</span></pre></code>
+<code class="lang-scss"><pre>parse-int(10px) <span class="hljs-comment">//-&gt; 10</span></pre></code><h2 id="flip-ltr-value-rtl-value-">flip($ltr-value, $rtl-value)</h2>
+<p>Switch the two parameters depending on the <code>$ltr</code> setting.</p>
+<code class="lang-scss"><pre>flip(<span class="hljs-attribute">left</span>, <span class="hljs-attribute">right</span>) <span class="hljs-comment">//-&gt; "right" if $ltr is true, otherwise "left"</span></pre></code>
     
 
 
@@ -198,6 +200,16 @@ mathematically equal spacings never “visually” look equal around text.</p>
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="settings.html" data-pjax>
                 <span>Settings</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="text-direction.html" data-pjax>
+                <span>Text Direction</span>
                 
             </a>
         </li>
