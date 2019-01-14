@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="../subtheme/css/style.css?cachebust=1.2.0" type="text/css">
 
 
-<title>Migrating from version 1 to 2 | Kanbasu</title>
+<title>Migration guide | Kanbasu</title>
 
 </head>
 <body>
@@ -42,7 +42,7 @@
   </a>
   <ul class="Header-menu">
     
-      <li class="Header-version">2.3.0</li>
+      <li class="Header-version">2.4.0</li>
     
     <li>
       <a href="https://github.com/liip/kanbasu" title="Kanbasu on Github">
@@ -65,7 +65,7 @@
   
   <div class="Document-header">
     
-    <h1 class="Document-title">Migrating from version 1 to 2</h1>
+    <h1 class="Document-title">Migration guide</h1>
     
 
 
@@ -83,7 +83,16 @@
 
     
     
-    <p>This page describes the various changes required while migrating from Kanbasu 1 to 2. You may also want to have a look to the <a href="https://github.com/liip/kanbasu/blob/master/CHANGELOG.md">Changelog</a>.</p>
+    <h1 id="from-2-1-to-2-2">From 2.1 to 2.2</h1>
+<ul>
+<li>New setting available: <code>$form-group-spacing</code></li>
+</ul>
+<h1 id="from-2-to-2-1">From 2 to 2.1</h1>
+<ul>
+<li>New tool to add to your main Sass file: <code>@import &#39;~kanbasu/src/scss/tools/rtl&#39;;</code></li>
+</ul>
+<h1 id="from-1-to-2">From 1 to 2</h1>
+<p>This page describes the various changes required while migrating from Kanbasu 1 to 2. You may also want to have a look to the <a href="https://github.com/liip/kanbasu/blob/master/CHANGELOG.md">Changelog</a>.</p>
 <h2 id="mandatory">Mandatory</h2>
 <ul>
 <li>Remove all imports of <code>components/mosaic</code> and <code>components/mosaic-responsive</code>, these components have been removed.</li>
@@ -189,6 +198,16 @@
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
             <a class="Tree-entityLink" href="" data-pjax>
                 <span>Migration Guide</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="changelog.html" data-pjax>
+                <span>CHANGELOG</span>
                 
             </a>
         </li>
